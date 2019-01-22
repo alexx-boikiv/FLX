@@ -1,0 +1,182 @@
+@media print {
+	section, .tm-sidebar, #about {
+		display: none;
+	}
+	
+	#what-we-do {
+		display: block;
+	}
+	
+	#what-we-do .flex-2-col div:first-of-type {
+		float: left;
+		width: 17em;
+	}
+
+	#what-we-do .flex-2-col div:last-of-type {
+		float: right;
+	}
+
+	#what-we-do .flex-2-col img {
+		width: 170px;
+		height: 170px;
+		margin-top: 90px;
+	}
+	
+	h2 + p {
+		font-style: italic;
+	}
+	
+	section p {
+	line-height: 2em;
+	text-indent: 2em;
+	}
+	
+	.tm-main-content {
+		margin: auto;
+		width: 480px;
+	}
+	
+	.tm-banner, .padding-medium {
+		padding: 0;
+	}
+	
+	.tm-section-description::first-letter, .tm-banner-text::first-letter, .text-xs-center::first-letter {
+		color: #87CEFA;
+		font-size: 30px;
+	}
+}
+
+@media screen {
+	.tm-section-title-box:hover {
+		background: #87CEFA;
+		color: #fff;
+	}
+
+	.tm-section-description::first-letter, .tm-banner-text::first-letter {
+		color: #87CEFA;
+		font-size: 30px;
+	}
+
+	.tm-banner {
+		background: #f5f5f5;
+	}
+
+	.tm-banner-inner {
+		background: #fff;
+	}
+
+	.tm-content-box, .tm-sidebar {
+		box-shadow: 0 1px 8px 5px rgba(0, 0, 0, 0.2);
+	}
+
+	.padding-medium::before {
+		content: " ";
+		width: 300px;
+		height: 100px;
+		float: left;
+		background: #87CEFA;
+		transform: rotate(-7deg);
+		margin: -125px 0 0 -50px;
+	}
+
+	#tmCarousel::before {
+		content: " ";
+		width: 300px;
+		height: 100px;
+		float: left;
+		background: #87CEFA;
+		transform: rotate(-7deg);
+		margin: -135px 0 0 -60px;
+	}	
+
+	.padding-medium {
+		overflow: hidden;
+	}
+
+	#what-we-do .flex-2-col div:first-of-type {
+		float: left;
+		width: 22em;		
+	}
+
+	#what-we-do .flex-2-col div:last-of-type {
+		float: right;
+	}
+
+	#what-we-do .flex-2-col img {
+		width: 750px;
+		height: 725px;
+	}
+	
+	#what-we-do .flex-2-col h2 {
+		margin-top: 5em;
+	}
+
+	.carousel-inner h2 {
+		color: gainsboro;
+		letter-spacing: 5px;
+	}
+
+	h2 + p {
+		font-style: italic;
+	}
+
+	section p {
+	line-height: 2em;
+	text-indent: 2em;
+	}
+
+	ol a:visited {
+		text-decoration: underline;
+	}
+
+	ol a:hover {
+		text-decoration: none;
+	}
+
+	.text::after {
+		content: "New";
+		vertical-align: super;
+		font-size: smaller;
+		color: red;
+	}
+
+	.blocks p {
+		text-indent: 0;
+		font-size: 0.9em;
+	}
+
+	.blocks p:first-letter {
+		font-size: 2em;
+	}
+
+	.box-work div {
+		height: 100%;
+	}
+
+	.box-work {
+		padding: 5px;
+		
+	}
+	.chess-bg {
+			background: gainsboro;
+	}
+
+	.mandatory-field::after {
+		content: "*";
+		color: red;
+		font-weight: bold;
+	}
+
+	.submit-btn {
+		border-radius: 0;
+		border: none;
+	}
+
+	.submit-btn:hover {
+		background: #87CEFA;
+	}
+
+	.tm-nav-item:hover {
+		background: #f5f5f5;
+	}
+}
